@@ -3,20 +3,20 @@
     <item
         android:id="@+id/action_home"
         android:title="Home"
-        android:icon="@mipmap/ic_home_white"/>
+        android:icon="@mipmap/ic_home"/>
 
     <item
         android:id="@+id/action_trade"
         android:title="Trade"
-        android:icon="@mipmap/ic_trending_up_white"/>
+        android:icon="@mipmap/ic_trade"/>
 
     <item
         android:id="@+id/action_service"
         android:title="Service"
-        android:icon="@mipmap/ic_work_white"/>
+        android:icon="@mipmap/ic_service"/>
 
     <item
         android:id="@+id/action_me"
         android:title="Me"
-        android:icon="@mipmap/ic_perm_identity_white"/>
+        android:icon="@mipmap/ic_me"/>
 </menu>
