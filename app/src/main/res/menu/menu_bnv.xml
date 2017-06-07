@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@mipmap/ic_home_white"/>
+
+    <item
+        android:id="@+id/action_trade"
+        android:title="Trade"
+        android:icon="@mipmap/ic_trending_up_white"/>
+
+    <item
+        android:id="@+id/action_service"
+        android:title="Service"
+        android:icon="@mipmap/ic_work_white"/>
+
+    <item
+        android:id="@+id/action_me"
+        android:title="Me"
+        android:icon="@mipmap/ic_perm_identity_white"/>
+</menu>
