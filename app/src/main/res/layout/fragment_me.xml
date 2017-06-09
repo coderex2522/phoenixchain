@@ -28,9 +28,22 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/textView1"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="me" />
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/fragment_me_header" />
+        <include
+            layout="@layout/fragment_me_nav_settings" />
+        <Button
+            android:id="@+id/logging_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全退出"
+            android:padding="8dp"
+            android:background="#3F51B5"
+            android:layout_gravity="center"
+            android:layout_marginTop= "48dp"/>
+    </LinearLayout>
 </LinearLayout>
