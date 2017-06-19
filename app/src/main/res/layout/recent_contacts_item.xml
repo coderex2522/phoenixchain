@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_recent_contacts"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/iv_recent_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_shop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iv_recent_contacts"
+        android:background="@drawable/recent_contacts_bg"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_recent_contacts_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:text="张*"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_recent_contacts_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="12345***678"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

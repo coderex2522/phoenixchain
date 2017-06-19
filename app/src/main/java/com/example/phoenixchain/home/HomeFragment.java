@@ -1,5 +1,6 @@
 package com.example.phoenixchain.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.phoenixchain.MainActivity;
 import com.example.phoenixchain.R;
@@ -46,11 +46,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View contentView = inflater.inflate(R.layout.fragment_home,container,false);
-        homeToolbar = (Toolbar) contentView.findViewById(R.id.homeToolbar);
+
+        //init the toolbar of the home activity
+        homeToolbar = (Toolbar) contentView.findViewById(R.id.include_tb_home)
+                .findViewById(R.id.tb_base);
         ((MainActivity)getActivity()).setSupportActionBar(homeToolbar);
         ((MainActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
         setHasOptionsMenu(true);
-
         //init pay items
         initPayList(contentView);
         initApplicationList(contentView);
@@ -102,14 +104,21 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.include_scancode:
-                ImageView scancodeIV = (ImageView) v.findViewById( R.id.iv_pay_item);
-
+                //ImageView scancodeIV = (ImageView) v.findViewById( R.id.iv_pay_item);
+                //Drawable scancodeIVDrawable = scancodeIV.getDrawable();
+                //scancodeIV.setImageDrawable(UsefulTools.tintDrawable(scancodeIVDrawable, ColorStateList.valueOf(Color.BLACK)));
                 break;
             case R.id.include_pay_money:
                 break;
             case R.id.include_collect:
                 break;
             case R.id.include_transfer:
+                //ImageView transferIV = (ImageView) v.findViewById(R.id.iv_pay_item);
+                //Drawable transferIVDrawable = transferIV.getDrawable();
+                Intent transferIntent = new Intent(v.getContext(),SearchAccountOfTransferActivity.class);
+                //transferIV.setImageDrawable(UsefulTools.tintDrawable(transferIVDrawable,ColorStateList.valueOf(Color.DKGRAY)));
+                startActivity(transferIntent);
+                break;
         }
     }
 }

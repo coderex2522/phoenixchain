@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivityBackground">
+
+    <include
+        android:id="@+id/include_tb_search_account"
+        layout="@layout/toolbar_base"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white">
+            <TextView
+                android:id="@+id/tv_other_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_horizontal|center"
+                android:text="对方账户"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/et_input_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_other_account"
+                android:layout_marginLeft="8dp"
+                android:layout_centerInParent="true"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:hint="凤币账户/手机号码"
+                android:textSize="20sp"
+                android:background="@null"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_trade_record"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:text="凤币实时转入对方账户,无法退币"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBtnGrey"
+            android:text="下一步" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:text="最近记录"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recent"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+</LinearLayout>

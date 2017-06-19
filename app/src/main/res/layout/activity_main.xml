@@ -26,6 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bnv_bg"
+
             android:layout_alignParentBottom="true"
             app:menu="@menu/menu_bnv"
             app:itemIconTint="@drawable/bnv_item_selector"
