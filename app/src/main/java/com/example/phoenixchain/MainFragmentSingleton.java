@@ -20,6 +20,7 @@ public class MainFragmentSingleton {
         tradeFragment = null;
         serviceFragment = null;
         meFragment = null;
+
     }
 
     public HomeFragment getHomeFragment() {

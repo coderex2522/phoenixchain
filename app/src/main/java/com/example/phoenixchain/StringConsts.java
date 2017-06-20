@@ -13,4 +13,7 @@ public class StringConsts {
 
     //transfer start activity
     public static final String RECENT_CONTACTS_ITEM = "RecentContactsItem";
+
+    //public static final String ORDERS_ITEM_STATES[]=new String[]{"未支付","支付完成"};
+    public static final String TOTAL_PRICE = "合计为:";
 }

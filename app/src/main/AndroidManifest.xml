@@ -21,6 +21,7 @@
         <activity android:name=".home.TransferStartActivity">
         </activity>
         <activity android:name=".home.TransferDetailsActivity"/>
+        <activity android:name=".me.MyOrdersActivity"/>
     </application>
 
 </manifest>
