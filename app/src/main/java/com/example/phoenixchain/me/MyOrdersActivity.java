@@ -1,5 +1,6 @@
 package com.example.phoenixchain.me;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.phoenixchain.ChildActivity;
+import com.example.phoenixchain.OnItemClickListener;
 import com.example.phoenixchain.R;
 import com.example.phoenixchain.TitleConsts;
 
@@ -27,13 +29,13 @@ public class MyOrdersActivity extends ChildActivity {
 
     private void initOrdersList(){
         ordersItemInfoList = new ArrayList<OrdersItemInfo>();
-        OrdersItemInfo ordersItemInfo=new OrdersItemInfo("园博园服饰商城","园博园购票大全",60.0,R.mipmap.ic_shop,2);
+        OrdersItemInfo ordersItemInfo=new OrdersItemInfo("园博园服饰商城","园博园购票大全",60.0,R.mipmap.ic_shop,0);
         ordersItemInfoList.add(ordersItemInfo);
-        OrdersItemInfo ordersItemInfo1=new OrdersItemInfo("园博园服饰商城1","园博园购票大全1",50.0,R.mipmap.ic_shop,2);
+        OrdersItemInfo ordersItemInfo1=new OrdersItemInfo("园博园服饰商城1","园博园购票大全1",50.0,R.mipmap.ic_shop,1);
         ordersItemInfoList.add(ordersItemInfo1);
         OrdersItemInfo ordersItemInfo2=new OrdersItemInfo("园博园服饰商城2","园博园购票大全2",40.0,R.mipmap.ic_shop,2);
         ordersItemInfoList.add(ordersItemInfo2);
-        OrdersItemInfo ordersItemInfo3=new OrdersItemInfo("园博园服饰商城3","园博园购票大全3",30.0,R.mipmap.ic_shop,2);
+        OrdersItemInfo ordersItemInfo3=new OrdersItemInfo("园博园服饰商城3","园博园购票大全3",30.0,R.mipmap.ic_shop,1);
         ordersItemInfoList.add(ordersItemInfo3);
     }
     @Override
@@ -50,5 +52,13 @@ public class MyOrdersActivity extends ChildActivity {
         myOrdersRV.setLayoutManager(linearLayoutManager);
         MyOrdersAllApdater myOrdersAllApdater = new MyOrdersAllApdater(ordersItemInfoList);
         myOrdersRV.setAdapter(myOrdersAllApdater);
+        myOrdersAllApdater.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(MyOrdersActivity.this,OrderDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

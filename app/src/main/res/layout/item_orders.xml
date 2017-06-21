@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp">
         <Button
-            android:id="@+id/btn_assess_order"
+            android:id="@+id/btn_change"
             android:layout_width="64dp"
             android:layout_height="32dp"
             android:layout_marginTop="8dp"
@@ -105,24 +105,13 @@
             android:background="@drawable/button_shape"/>
 
         <Button
-            android:id="@+id/btn_cancel_order"
-            android:layout_width="64dp"
-            android:layout_height="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_toLeftOf="@id/btn_assess_order"
-            android:text="取消订单"
-            android:background="@drawable/button_shape"/>
-
-        <Button
             android:id="@+id/btn_require_pay"
             android:layout_width="64dp"
             android:layout_height="32dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:layout_marginRight="8dp"
-            android:layout_toLeftOf="@id/btn_cancel_order"
+            android:layout_toLeftOf="@id/btn_change"
             android:text="确认支付"
             android:background="@drawable/button_shape"/>
     </RelativeLayout>

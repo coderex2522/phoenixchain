@@ -4,11 +4,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-//import com.example.phoenixchain.OnItemClickListener;
+import com.example.phoenixchain.OnItemClickListener;
 import com.example.phoenixchain.R;
 
 import java.util.List;
@@ -20,7 +19,7 @@ import java.util.List;
 public class RecentContactsRecyclerViewAdapter extends RecyclerView.Adapter<RecentContactsRecyclerViewAdapter.RecentContactsViewHolder>
                                                 implements  View.OnClickListener{
     private List<RecentContacts> recentContactsList;
-    private AdapterView.OnItemClickListener onItemClickListener;
+    private OnItemClickListener onItemClickListener;
 
 
     public RecentContactsRecyclerViewAdapter(List<RecentContacts> recentContactsList) {
@@ -29,7 +28,7 @@ public class RecentContactsRecyclerViewAdapter extends RecyclerView.Adapter<Rece
 
     @Override
     public RecentContactsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recent_contacts_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recent_contacts,parent,false);
         RecentContactsViewHolder viewHolder = new RecentContactsViewHolder(view);
         view.setOnClickListener(this);
         return viewHolder;

@@ -9,4 +9,5 @@ public class TitleConsts {
     public static final String TRANSFER_DETAILS_TITLE = "转账详情";
 
     public static final String MY_ORFERS_TITLE = "我的订单";
+    public static final String ORDER_DETAIL_TITLE = "订单详情";
 }

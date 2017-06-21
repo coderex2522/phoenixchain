@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.phoenixchain.OnItemClickListener;
 import com.example.phoenixchain.R;
 import com.example.phoenixchain.StringConsts;
 import com.example.phoenixchain.TitleConsts;
@@ -87,9 +88,6 @@ public class SearchAccountOfTransferActivity extends AppCompatActivity implement
         //process the edit-text of input account ;
         inputAccountET.addTextChangedListener(this);
 
-
-
-
         //set the toolbar and the title
         titleTextView.setText(TitleConsts.SEARCH_ACCOUNT_TITLE);
         setSupportActionBar(toolbar);
@@ -107,7 +105,7 @@ public class SearchAccountOfTransferActivity extends AppCompatActivity implement
         recentContactsRV.setLayoutManager(linearLayoutManager);
         recentContactsAdapter = new RecentContactsRecyclerViewAdapter(recentContactsList);
         recentContactsRV.setAdapter(recentContactsAdapter);
-        recentContactsAdapter.setOnItemClickListener(new RecentContactsRecyclerViewAdapter.OnItemClickListener() {
+        recentContactsAdapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 RecentContacts recentContactsItem = recentContactsList.get(position);

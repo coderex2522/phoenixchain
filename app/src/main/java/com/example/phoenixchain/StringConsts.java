@@ -16,4 +16,11 @@ public class StringConsts {
 
     //public static final String ORDERS_ITEM_STATES[]=new String[]{"未支付","支付完成"};
     public static final String TOTAL_PRICE = "合计为:";
+
+    /*
+     the string of my order btn text
+     */
+    public static final String CANCEL_ORDER = "取消订单";
+    public static final String ASSESS_ORDER = "评价晒单";
+    public static final String DRAWBACK = "退款";
 }
