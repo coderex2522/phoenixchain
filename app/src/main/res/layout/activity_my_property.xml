@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/include_tb_my_property"
+        layout="@layout/toolbar_base"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/tv_mybalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的凤币余额"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            />
+        <TextView
+
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999.99"
+            android:textSize="64sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_mybalance"
+            android:layout_marginTop="24dp"
+            />
+        <TextView
+
+            android:id="@+id/tv_convertedintoRMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="折合人民币：9999.99"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_balance"
+            android:layout_marginTop="24dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_transaction">
+        <LinearLayout
+            android:id="@+id/nav_transaction"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                layout="@layout/item_transaction_record" />
+
+            <include
+                layout="@layout/item_transaction_record" />
+
+            <include
+                layout="@layout/item_transaction_record" />
+
+        </LinearLayout>
+        <TextView
+
+            android:id="@+id/more_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易明细"
+            android:textSize="8sp"
+            android:clickable="true"
+            android:textColor="@drawable/tv_color_moretransaction"
+            android:layout_below="@+id/nav_transaction"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

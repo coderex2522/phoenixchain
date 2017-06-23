@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/include_tb_security_setting"
+        layout="@layout/toolbar_base"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_modify_login_password"
+        android:layout_marginTop="96dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transaction_record_bg"
+        >
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="修改登陆密码"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_set_payment_password"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transaction_record_bg"
+        >
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="设置支付密码"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_backup_private_key"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transaction_record_bg"
+        >
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="备份私钥"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_restore_private_key"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transaction_record_bg"
+        >
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="恢复私钥"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

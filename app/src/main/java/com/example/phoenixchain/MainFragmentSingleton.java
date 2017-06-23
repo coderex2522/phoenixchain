@@ -1,9 +1,9 @@
 package com.example.phoenixchain;
 
-import com.example.phoenixchain.home.HomeFragment;
-import com.example.phoenixchain.me.MeFragment;
-import com.example.phoenixchain.service.ServiceFragment;
-import com.example.phoenixchain.trade.TradeFragment;
+import com.example.phoenixchain.fragment.HomeFragment;
+import com.example.phoenixchain.fragment.MeFragment;
+import com.example.phoenixchain.fragment.ServiceFragment;
+import com.example.phoenixchain.fragment.TradeFragment;
 
 /**
  * Created by coderex2522 on 6/5/2017.

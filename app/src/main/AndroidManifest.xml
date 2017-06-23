@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.phoenixchain">
 
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,13 +21,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".home.SearchAccountOfTransferActivity">
-        </activity>
-        <activity android:name=".home.TransferStartActivity">
-        </activity>
-        <activity android:name=".home.TransferDetailsActivity"/>
-        <activity android:name=".me.MyOrdersActivity"/>
-        <activity android:name=".me.OrderDetailActivity"/>
+        <activity android:name=".activity.SearchAccountOfTransferActivity"/>
+
+        <activity android:name=".activity.TransferStartActivity"/>
+
+        <activity android:name=".activity.TransferDetailsActivity"/>
+        <activity android:name=".activity.MyOrdersActivity"/>
+        <activity android:name=".activity.OrderDetailActivity"/>
+        <activity android:name=".activity.PaymentMethodsActivity"/>
+
+        <activity android:name=".activity.PaySuccessActivity"/>
+        <activity android:name=".activity.ApplyDrawbackActivity"/>
+
+
+
+        <activity android:name=".activity.BackupPrivateKey"/>
+        <activity android:name=".activity.ForgetLoginAcitivity"/>
+        <activity android:name=".activity.ForgetLoginPasswordActivity"/>
+        <activity android:name=".activity.ForgetPaymentPasswordActivity"/>
+        <activity android:name=".activity.LoginActivity" android:label="@string/title_activity_login" />
+        <activity android:name=".activity.ModifyLoginPassword"/>
+        <activity android:name=".activity.ModifyPaymentPassword"/>
+        <activity android:name=".activity.ModifySelfInfoActivity"/>
+        <activity android:name=".activity.MyPropertyActivity"/>
+        <activity android:name=".activity.RegisterActivity"/>
+        <activity android:name=".activity.RestorePrivateKey"/>
+        <activity android:name=".activity.SecuritySettingActivity"/>
+        <activity android:name=".activity.SelfInfoActivity"/>
+	    <activity android:name=".activity.SetNewLoginPasswordActivity"/>
+        <activity android:name=".activity.SetPrivateKeyPassword"/>
+        <activity android:name=".activity.SetPaymentPassword"/>
+        <activity android:name=".activity.SetNewPaymentPassword"/>
+        <activity android:name=".activity.TransactionRecordActivity"/>
+
     </application>
 
 </manifest>

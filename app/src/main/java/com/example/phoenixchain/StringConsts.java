@@ -23,4 +23,11 @@ public class StringConsts {
     public static final String CANCEL_ORDER = "取消订单";
     public static final String ASSESS_ORDER = "评价晒单";
     public static final String DRAWBACK = "退款";
+    public static final String GO_PAY = "去支付";
+    public static final String SHOP_AGAIN = "再次购买";
+
+    public static final String ORDER_ITEM_DETAIL = "orderitemdetail";
+    public static final String DRAWBACK_ITEM = "drawback";
+    public static final String PAY_ITEM = "pay";
+    public static final String PAY_AGAIN_ITEM = "payagain";
 }
