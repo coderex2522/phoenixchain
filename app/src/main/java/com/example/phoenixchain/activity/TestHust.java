@@ -5,4 +5,5 @@ package com.example.phoenixchain.activity;
  */
 
 public class TestHust {
+    private int hahah;
 }
