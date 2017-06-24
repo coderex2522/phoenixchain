@@ -1,4 +1,4 @@
-package com.example.phoenixchain;
+package com.example.phoenixchain.fragment;
 
 import com.example.phoenixchain.fragment.HomeFragment;
 import com.example.phoenixchain.fragment.MeFragment;

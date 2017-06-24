@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.phoenixchain.MainActivity;
+import com.example.phoenixchain.activity.MainActivity;
 import com.example.phoenixchain.R;
 import com.example.phoenixchain.activity.SearchAccountOfTransferActivity;
 
