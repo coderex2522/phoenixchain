@@ -87,7 +87,7 @@ public class EmailAutoCompleteTextView extends android.support.v7.widget.AppComp
                             && text.matches("^[a-zA-Z0-9_]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9]+$")) {
                         Toast to = new Toast(context);
                         ImageView i = new ImageView(context);
-                        i.setBackgroundResource(R.drawable.ico_refund_success);
+                        i.setBackgroundResource(R.mipmap.ico_refund_success);
                         to.setView(i);
                         to.show();
                     } else {

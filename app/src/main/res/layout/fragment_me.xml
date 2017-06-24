@@ -51,7 +51,7 @@
                     android:layout_above="@+id/tv_username"
                     android:layout_centerInParent="true"
                     android:layout_margin="8dp"
-                    android:src="@drawable/nav_icon" />
+                    android:src="@mipmap/nav_icon" />
 
                 <TextView
                     android:id="@+id/tv_phone_number"
